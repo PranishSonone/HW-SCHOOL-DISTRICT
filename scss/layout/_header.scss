@@ -391,8 +391,18 @@ header {
             outline: none;
             background: transparent;
             color: $nav-link-color;
+            display: flex;
+            align-items: center;
+
+            button{
+              display: flex;
+              align-items: center;
+            }
+
+           
             cursor: pointer;
             .icon-drop-down {
+              padding-left: 1rem;
               &:before{
               content: "\e905";
               color: #000000;
