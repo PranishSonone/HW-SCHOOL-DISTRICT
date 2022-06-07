@@ -65,12 +65,12 @@
             }
 
 
-            .banner-heading{
+            .banner-heading {
                 font-size: 7rem;
                 max-width: 694px;
                 color: $white-color;
                 // font-family: $quaternary-font-family;
-                  font-family: $primary-font-family;
+                font-family: $primary-font-family;
                 animation: 1s slide-left-right forwards;
                 animation-delay: 0.1s;
                 transform: translateX(-100%);
@@ -149,8 +149,8 @@
                 font-size: 2.2rem;
 
                 &:hover {
-                    background-color:$white-color;
-                    color:$bg-primary-color;
+                    background-color: $white-color;
+                    color: $bg-primary-color;
 
                     .icon-btn-left-arrow::before {
                         color: $bg-primary-color;
@@ -196,7 +196,7 @@
 
         .banner-right-div {
             max-width: 111rem;
-          
+
 
             @include breakpoint(larg-desktop) {
                 max-width: 70rem;
@@ -246,7 +246,7 @@
     .superintendent-left-div {
         @include breakpoint(mobile-max) {
             margin-top: -5rem;
-           
+
         }
 
         .kimmie-img-div {
@@ -278,7 +278,7 @@
                 position: absolute;
                 top: -6.7rem;
                 left: -5.8rem;
-               
+
                 img {
                     @include breakpoint(larg-desktop) {
                         width: 90%;
@@ -308,9 +308,10 @@
             background: rgb(255, 186, 73);
             color: rgb(33, 37, 41);
             font-family: Circular-Std-Book;
-            &:hover{
-                background-color: rgb(33, 37, 41) ;
-                color:rgb(255, 186, 73) ;
+
+            &:hover {
+                background-color: rgb(33, 37, 41);
+                color: rgb(255, 186, 73);
             }
 
             @include breakpoint(larg-desktop) {
@@ -326,9 +327,7 @@
                 font-size: 1.2rem;
             }
 
-            .Kimmie-btn {
-             
-            }
+            .Kimmie-btn {}
         }
 
     }
@@ -343,7 +342,7 @@
 
         }
 
-        .superintendent-heading{
+        .superintendent-heading {
             font-size: 4.5rem;
             color: $heading-color;
             // font-family: $quaternary-font-family;
@@ -372,7 +371,7 @@
 
         }
 
-        .superintendent-paragraph{
+        .superintendent-paragraph {
             font-size: 2.5rem;
             font-family: $primary-font-family;
             color: #212529;
@@ -400,11 +399,12 @@
         .superintendent-dot-img {
             position: absolute;
             top: -5.7rem;
-           right: 40%;
-            @include breakpoint(ipad-max){
+            right: 40%;
+
+            @include breakpoint(ipad-max) {
                 display: none;
             }
-       
+
         }
 
 
@@ -415,13 +415,16 @@
     position: relative;
     background-color: $bg-primary-color;
     margin-top: 28rem;
-    @include breakpoint(larg-desktop){
+
+    @include breakpoint(larg-desktop) {
         margin-top: 21rem;
     }
-    @include breakpoint(desktop-max){
+
+    @include breakpoint(desktop-max) {
         margin-top: 17rem;
     }
-    @include breakpoint(ipad-max){
+
+    @include breakpoint(ipad-max) {
         margin-top: 10rem;
     }
 
@@ -479,7 +482,7 @@
                 -ms-transform: translateY(-60px);
                 -o-transform: translateY(-60px);
                 position: relative;
-	             z-index: 1;
+                z-index: 1;
 
             }
 
@@ -506,7 +509,7 @@
 
             }
 
-            .mission-text-heading{
+            .mission-text-heading {
                 padding-top: 11.8rem;
                 font-size: 4.8rem;
                 font-family: $quaternary-font-family;
@@ -527,7 +530,7 @@
                 }
             }
 
-             .mission-text-paragraph{
+            .mission-text-paragraph {
                 color: $white-color;
                 font-family: 'Roboto', sans-serif;
                 font-size: 2.2rem;
@@ -547,7 +550,8 @@
                     padding: 1rem 2rem 2rem 0;
                     max-width: 43.5rem;
                 }
-                @include breakpoint(ipad-max){
+
+                @include breakpoint(ipad-max) {
                     font-size: 1.2rem;
                 }
 
@@ -558,21 +562,22 @@
 
             }
 
-            .mission-btn{
+            .mission-btn {
                 font-size: 2.2rem;
                 color: #212529;
                 font-family: $primary-font-family;
                 padding: 1.4rem 6.2rem;
-                background-color:$white-color;
+                background-color: $white-color;
                 border-radius: 2.2rem;
                 -webkit-border-radius: 2.2rem;
                 -moz-border-radius: 2.2rem;
                 -ms-border-radius: 2.2rem;
                 -o-border-radius: 2.2rem;
                 cursor: pointer;
-                &:hover{
-                    background-color: $bg-primary-color ;
-                    color: $white-color ;
+
+                &:hover {
+                    background-color: $bg-primary-color;
+                    color: $white-color;
                     border: 1px solid $white-color;
                 }
 
@@ -625,7 +630,7 @@
                 padding: unset;
             }
 
-            .vision-text-heading{
+            .vision-text-heading {
                 // padding-top: 11.8rem;
                 font-size: 4.8rem;
                 font-family: $quaternary-font-family;
@@ -648,7 +653,7 @@
                 }
             }
 
-            .vision-pragraph{
+            .vision-pragraph {
                 color: $white-color;
                 font-family: 'Roboto', sans-serif;
                 font-size: 2.2rem;
@@ -659,7 +664,7 @@
 
                 @include breakpoint(medium-large-desktop-max) {
                     font-size: 1.6rem;
-                    
+
                 }
 
                 @include breakpoint(desktop-max) {
@@ -681,17 +686,19 @@
 
 
             }
-            .vision-list{
-                @include breakpoint(mobile-max){
-                  display: flex;
-                  justify-content: center;
-                 
+
+            .vision-list {
+                @include breakpoint(mobile-max) {
+                    display: flex;
+                    justify-content: center;
+
                 }
+
                 ol {
-                    @include breakpoint(mobile-max){
+                    @include breakpoint(mobile-max) {
                         text-align: left;
                     }
-              
+
                     li {
                         color: $white-color;
                         font-family: 'Roboto', sans-serif;
@@ -699,32 +706,32 @@
                         // max-width: 63.5rem;
                         line-height: 0.5rem;
                         padding: 1rem 0 3rem 0;
-    
+
                         @include breakpoint(medium-large-desktop-max) {
                             font-size: 1.6rem;
                             padding: 1rem 0 2rem 0;
                         }
-    
+
                         @include breakpoint(desktop-max) {
                             font-size: 1rem;
                             padding: 1.2rem 0 1rem 0;
                         }
-    
+
                         @include breakpoint(ipad-max) {
                             font-size: 1rem;
                             line-height: 0.1rem;
                             padding: 0.8rem 0 1rem 0;
                         }
                     }
-    
+
                 }
             }
 
-            
 
 
 
-             .vision-btn{
+
+            .vision-btn {
                 font-size: 2.2rem;
                 color: $mission-btn;
                 font-family: $primary-font-family;
@@ -735,10 +742,11 @@
                 -moz-border-radius: 2.2rem;
                 -ms-border-radius: 2.2rem;
                 -o-border-radius: 2.2rem;
-                &:hover{
-                    color: $white-color ;
-                    background-color: $bg-primary-color ;
-                  border: 1px solid $white-color;
+
+                &:hover {
+                    color: $white-color;
+                    background-color: $bg-primary-color;
+                    border: 1px solid $white-color;
                 }
 
                 @include breakpoint(medium-large-desktop-max) {
@@ -772,7 +780,7 @@
                 -ms-transform: translateY(60px);
                 -o-transform: translateY(60px);
                 position: relative;
-	             z-index: 1;
+                z-index: 1;
             }
 
             .vision-dot-img {
@@ -795,12 +803,13 @@
 
 .why-hw-school {
     padding-top: 15.1rem;
-    @include breakpoint(ipad-max){
+
+    @include breakpoint(ipad-max) {
         padding-top: 11.1rem;
     }
 
     .why-hw-text {
-        .why-hw-heading-h2{
+        .why-hw-heading-h2 {
             font-size: 4.8rem;
             color: $sceouendry-heading-color;
             padding-bottom: 2.8rem;
@@ -812,26 +821,27 @@
                 padding-bottom: 1.8rem;
 
             }
+
             @include breakpoint(medium-large-desktop-max) {
                 font-size: 3.5rem;
                 padding-bottom: 1rem;
-              
+
             }
-    
+
             @include breakpoint(ipad-max) {
                 font-size: 2.5rem;
-    
+
             }
-    
+
             @include breakpoint(mobile-max) {
                 font-size: 2rem;
-    
+
             }
-           
-    
-           
-    
-         
+
+
+
+
+
         }
 
         p {
@@ -840,28 +850,30 @@
             color: $banner-paragraph-color;
             max-width: 90.5rem;
             margin: 0 auto;
+
             // max-width: 95rem;
             // text-align: center;
             @include breakpoint(medium-large-desktop-max) {
                 font-size: 1.8rem;
 
             }
+
             @include breakpoint(medium-large-desktop-max) {
                 font-size: 1.8rem;
                 max-width: 60%;
             }
-    
+
             @include breakpoint(ipad-max) {
                 font-size: 1.6rem;
-    
+
             }
-    
+
             @include breakpoint(mobile-max) {
                 font-size: 1.2rem;
                 max-width: 100%;
-    
+
             }
-        
+
         }
     }
 
@@ -871,6 +883,7 @@
         // background: #e2e1e0;
         padding-top: 11.6rem;
         padding-bottom: 10rem;
+
         @include breakpoint(ipad-max) {
             font-size: 1.6rem;
             padding-top: 5.6rem;
@@ -1097,7 +1110,7 @@
 
         @include breakpoint(ipad-max) {
             margin-top: 2rem;
-           
+
         }
     }
 
@@ -1201,7 +1214,8 @@
                 @include breakpoint(desktop-max) {
                     font-size: 1.6rem;
                 }
-                @include breakpoint(portrait-mobile-max){
+
+                @include breakpoint(portrait-mobile-max) {
                     left: 43%;
                 }
             }
@@ -1224,7 +1238,8 @@
             @include breakpoint(mobile-max) {
                 left: 50%;
             }
-            @include breakpoint(portrait-mobile-max){
+
+            @include breakpoint(portrait-mobile-max) {
                 left: 52%;
             }
 
@@ -1256,8 +1271,9 @@
                 border-radius: unset;
                 border: unset;
                 transition: all 0.3s ease-out;
-               
+
                 &:hover {
+
                     // transform: scale(1.1);
                     // -webkit-transform: scale(1.1);
                     // -moz-transform: scale(1.1);
@@ -1268,8 +1284,8 @@
                         background-color: $bg-primary-color;
                     }
                 }
-                
-                @include breakpoint(larg-desktop){
+
+                @include breakpoint(larg-desktop) {
                     width: 275px;
                     // margin: 0 4rem;
                     margin: auto;
@@ -1280,7 +1296,7 @@
                     // margin: ;
                     // width: 100%;
                     width: 210px;
-                  
+
                 }
 
                 @include breakpoint(mobile-max) {
@@ -1289,7 +1305,7 @@
 
                 }
 
-               
+
 
                 h3 {
                     font-size: 2.5rem;
@@ -1298,7 +1314,7 @@
                     color: #37474F;
                     font-family: $secondary-font-family;
                     cursor: pointer;
-                    background-color:#ffffff;
+                    background-color: #ffffff;
 
                     @include breakpoint(medium-large-desktop-max) {
                         font-size: 1.6rem;
@@ -1321,11 +1337,12 @@
             top: 78%;
             right: 0;
             z-index: -1;
-            @include breakpoint(ipad-max){
+
+            @include breakpoint(ipad-max) {
                 display: none;
             }
-            
-            
+
+
         }
 
     }
@@ -1335,12 +1352,14 @@
 
 .testimonial-section {
     margin-top: 7.71rem;
+
     @include breakpoint(mobile-max) {
         margin-top: 1.71rem;
 
     }
+
     .testimonial-heading {
-        .testimonial-heading-h2{
+        .testimonial-heading-h2 {
             font-size: 4.8rem;
             color: $sceouendry-heading-color;
             // font-family: $quaternary-font-family;
@@ -1350,18 +1369,18 @@
             @include breakpoint(medium-large-desktop-max) {
                 font-size: 3.5rem;
                 padding-top: 7.4rem;
-             
+
             }
-    
+
             @include breakpoint(ipad-max) {
                 font-size: 2.5rem;
                 padding-bottom: 1rem;
-    
+
             }
-    
+
             @include breakpoint(mobile-max) {
                 font-size: 2rem;
-    
+
             }
         }
 
@@ -1378,35 +1397,39 @@
                 font-size: 1.8rem;
 
             }
+
             @include breakpoint(medium-large-desktop-max) {
                 font-size: 1.8rem;
                 max-width: 60%;
             }
-    
+
             @include breakpoint(ipad-max) {
                 font-size: 1.6rem;
-    
+
             }
-    
+
             @include breakpoint(mobile-max) {
                 font-size: 1.2rem;
                 max-width: 100%;
-    
+
             }
         }
     }
 
-   
+
 
     .testimonial-slider {
         margin-top: 17rem;
-        @include breakpoint(larg-desktop){
+
+        @include breakpoint(larg-desktop) {
             margin-top: 10rem;
         }
-        @include breakpoint(ipad-max){
+
+        @include breakpoint(ipad-max) {
             margin-top: 7rem;
         }
-        @include breakpoint(mobile-max){
+
+        @include breakpoint(mobile-max) {
             margin-top: 5rem;
         }
 
@@ -1426,22 +1449,24 @@
                 background-color: $white-color;
 
                 border-radius: 1.5rem;
-               	box-shadow: 0 0 77px rgb(0 0 0 / 13%);
-                border: 1px solid  rgb(0 0 0 / 13%);
+                box-shadow: 0 0 77px rgb(0 0 0 / 13%);
+                border: 1px solid rgb(0 0 0 / 13%);
                 transition: all 0.3s ease-out;
-                &:hover{
+
+                &:hover {
                     transform: scale(1.1);
                     -webkit-transform: scale(1.1);
                     -moz-transform: scale(1.1);
                     -ms-transform: scale(1.1);
                     -o-transform: scale(1.1);
+
                     @include breakpoint(mobile-max) {
-                        transform:unset;
-                        -webkit-transform:unset;
-                        -moz-transform:unset;
-                        -ms-transform:unset;
-                        -o-transform:unset;
-}
+                        transform: unset;
+                        -webkit-transform: unset;
+                        -moz-transform: unset;
+                        -ms-transform: unset;
+                        -o-transform: unset;
+                    }
                 }
 
 
@@ -1470,7 +1495,7 @@
                     border: 0;
                     background-color: $white-color;
                     display: flex;
-                  
+
 
                     @include breakpoint(mobile-max) {
                         justify-content: center;
@@ -1543,19 +1568,19 @@
         // }
 
         // .slick-dots .slick-active button:before {
-           
+
         //     font-size: 1.4rem;
         //     // font-size: 2rem;
         // }
-       .slick-dots button:before {
+        .slick-dots button:before {
             font-size: 20px;
-          }
-          
-           .slick-dots .slick-active button:before {
+        }
+
+        .slick-dots .slick-active button:before {
             color: $bg-primary-color;
             font-size: 25px;
-          }
-       
+        }
+
     }
 
 }
@@ -1658,8 +1683,9 @@
                         color: #373737;
                         font-size: 2.8rem;
                         font-family: $primary-font-family;
-                        &:hover{
-                            color:$bg-primary-color ;
+
+                        &:hover {
+                            color: $bg-primary-color;
                         }
 
                         @include breakpoint(medium-large-desktop-max) {
@@ -1758,7 +1784,7 @@
             @include breakpoint(ipad-max) {
                 font-size: 1.6rem;
                 max-width: 80%;
-               
+
 
             }
 
@@ -1770,12 +1796,13 @@
     }
 
     .progress-bar-card {
-       background-color: #F9F9FF;
+        background-color: #F9F9FF;
         padding-top: 3.4rem;
         padding-bottom: 8.2rem;
-         padding-right: 4.8rem 4.8rem;
+        padding-right: 4.8rem 4.8rem;
         transition: all 0.3s ease-out;
         margin: 0 1rem;
+
         &:hover {
             box-shadow: 0 50px 76px rgb(132 30 37 / 0.07);
             border-top-left-radius: 30%;
@@ -1785,12 +1812,14 @@
             -moz-transform: scale(1.1);
             -ms-transform: scale(1.1);
             -o-transform: scale(1.1);
-           
-           
+
+
         }
 
         @include breakpoint (larg-desktop) {
             padding-bottom: 4.2rem;
+            padding-left: 1.7rem;
+            padding-right: 1.7rem;
         }
 
         @include breakpoint (desktop-max) {
@@ -1808,10 +1837,11 @@
             margin: 2rem 4rem;
         }
 
-        
+
 
         .circle-chart__percent {
-                font-family: $primary-font-family;
+            font-family: $primary-font-family;
+
             @include breakpoint (desktop-max) {
                 font-size: 6px;
             }
@@ -1935,7 +1965,7 @@
 
         }
 
-       
+
     }
 }
 
