@@ -1,0 +1,96 @@
+@charset 'utf-8';
+
+//Vendor
+@import "vendors/__vendor-dir";
+
+//Helpers
+@import "helpers/__helpers-dir";
+
+//Base Styles
+@import "base/__base-dir";
+
+//Components
+@import "components/__components-dir";
+
+//Layout
+@import "layout/__layout-dir";
+
+//Pages
+@import "pages/__pages-dir";
+
+// .searchbox{
+//     position: relative;
+// }
+// .input{
+//   width: 0;
+//   border: 0;
+//   height: 4.4rem;
+//   padding: 0 3.5rem;
+//   border-radius: 2.2rem;
+//   -webkit-border-radius: 2.2rem;
+//   -moz-border-radius: 2.2rem;
+//   -ms-border-radius: 2.2rem;
+//   -o-border-radius: 2.2rem;
+//   box-shadow: 0 0 0.1rem 0.1rem  #FFFFFF;
+//   outline: none;
+//   color: #42be11;
+//   transition:all 0.5s ease-in ;
+//   -webkit-transition:all 0.5s ease-in ;
+//   -moz-transition:all 0.5s ease-in ;
+//   -ms-transition:all 0.5s ease-in ;
+//   -o-transition:all 0.5s ease-in ;
+//   @include breakpoint(desktop-max){
+//    background-color: aqua;
+//    padding: 0 0;
+//    padding-left: 4.3rem;
+  
+  
+//  }
+// }
+// .search-btn{
+//     position: absolute;
+//     top: 0;
+//     right: -0.1rem;
+//     width: 6.1rem;
+//     height: 100%;
+//     background-color: #FFFFFF;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     border-radius: 2.2rem;
+//     -webkit-border-radius: 2.2rem;
+//     -moz-border-radius: 2.2rem;
+//     -ms-border-radius: 2.2rem;
+//     -o-border-radius: 2.2rem;
+//     transition:all 0.5s linear ;
+//     -webkit-transition:all 0.5s linear ;
+//     -moz-transition:all 0.5s linear ;
+//     -ms-transition:all 0.5s linear ;
+//     -o-transition:all 0.5s linear ;
+//     @include breakpoint(ipad-max){
+//        left: -1px;
+//     }
+  
+// }
+// .icon-search-bar{
+//     font-size: 2.4rem;
+//     transition:all 0.5s linear ;
+//     -webkit-transition:all 0.5s linear ;
+//     -moz-transition:all 0.5s linear ;
+//     -ms-transition:all 0.5s linear ;
+//     -o-transition:all 0.5s linear ;
+// }
+// .active-width{
+//     width: 100%;
+//     @include breakpoint(desktop-max){
+//         width: 50%;
+       
+//       }
+//       @include breakpoint(mobile-max){
+//         width: 90%;
+       
+//       }
+// }
+
+
+ 

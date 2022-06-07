@@ -1,0 +1,164 @@
+
+//   // call-icon
+// @font-face {
+//     font-family: 'icomoon';
+//     src:  url('../icons/call-icon/icomoon.eot?1j4du0');
+//     src:  url('../icons/call-icon/icomoon.eot?1j4du0#iefix') format('embedded-opentype'),
+//       url('../icons/call-icon/icomoon.ttf?1j4du0') format('truetype'),
+//       url('../icons/call-icon/icomoon.woff?1j4du0') format('woff'),
+//       url('../icons/call-icon/icomoon.svg?1j4du0#icomoon') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+//     font-display: block;
+//     // background: url("../../icons/call-icon/");
+//   }
+  
+//   [class^="icon-"], [class*=" icon-"] {
+//     /* use !important to prevent issues with browser extensions that change fonts */
+//     font-family: 'icomoon' !important;
+//     speak: never;
+//     font-style: normal;
+//     font-weight: normal;
+//     font-variant: normal;
+//     text-transform: none;
+//     line-height: 1;
+  
+//     /* Better Font Rendering =========== */
+//     -webkit-font-smoothing: antialiased;
+//     -moz-osx-font-smoothing: grayscale;
+//   }
+  
+//   .icon-call:before {
+//     content: "\e900";
+//     color: #c8c8c8;
+//   }
+
+
+  // mail-con
+  @import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?aozaff');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?aozaff#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?aozaff') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?aozaff') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?aozaff##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-left {
+  &:before {
+    content: $icon-arrow-left;     
+    color: #841e25;
+  }
+}
+.icon-arrow-right {
+  &:before {
+    content: $icon-arrow-right;     
+    color: #841e25;
+  }
+}
+.icon-book {
+  &:before {
+    content: $icon-book;     
+    color: #fff;
+  }
+}
+.icon-btn-left-arrow {
+  &:before {
+    content: $icon-btn-left-arrow;     
+    color: #fff;
+  }
+}
+.icon-call {
+  &:before {
+    content: $icon-call;     
+    color: #c8c8c8;
+  }
+}
+.icon-drop-down {
+  &:before {
+    content: $icon-drop-down;     
+    color: #fff;
+  }
+}
+.icon-facebook {
+  &:before {
+    content: $icon-facebook;     
+    color: #eff1f3;
+  }
+}
+.icon-home {
+  &:before {
+    content: $icon-home;     
+    color: #fff;
+  }
+}
+.icon-letter {
+  &:before {
+    content: $icon-letter;     
+    color: #fff;
+  }
+}
+.icon-location {
+  &:before {
+    content: $icon-location;     
+    color: #fff;
+  }
+}
+.icon-mail {
+  &:before {
+    content: $icon-mail;     
+    color: #c8c8c8;
+  }
+}
+.icon-medal-icon {
+  &:before {
+    content: $icon-medal-icon;     
+    color: #fff;
+  }
+}
+.icon-page-icon {
+  &:before {
+    content: $icon-page-icon;     
+    color: #fff;
+  }
+}
+.icon-search-bar {
+  &:before {
+    content: $icon-search-bar; 
+  }
+}
+.icon-twitter {
+  &:before {
+    content: $icon-twitter;     
+    color: #eaf1f8;
+  }
+}
+.icon-youtube {
+  &:before {
+    content: $icon-youtube;     
+    color: #fff;
+  }
+}
+
+
+  
