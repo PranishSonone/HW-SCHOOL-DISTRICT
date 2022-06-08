@@ -343,7 +343,7 @@
 
 
         }
-       
+
         .superintendent-heading {
             font-size: 4.5rem;
             color: $heading-color;
@@ -649,9 +649,12 @@
                 }
 
                 @include breakpoint(ipad-max) {
-                    padding-top: 4rem;
+                  padding-top: unset;
                     padding-left: unset;
 
+                }
+                @include breakpoint(mobile-max){
+                    padding-top: 4rem;
                 }
             }
 
@@ -886,6 +889,7 @@
         padding-top: 11.6rem;
         padding-bottom: 10rem;
 
+
         @include breakpoint(ipad-max) {
             font-size: 1.6rem;
             padding-top: 5.6rem;
@@ -904,12 +908,12 @@
             padding-right: 3rem;
             border-radius: 1.5rem;
             box-shadow: rgb(0 0 0 / 13%) 0px 0px 77px;
-            // border: 1px solid #000000;
-
+            //border: 1px solid #000000;
+            transition: all 1s ease-out;
             cursor: pointer;
 
-            // max-width: 38.2rem;
-            // margin-left: 5rem;
+            //max-width: 38.2rem;
+            //margin-left: 5rem;
             &:hover {
                 background: $bg-primary-color;
                 box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -979,7 +983,6 @@
                 width: 8rem;
                 height: 8rem;
                 border: 1px solid $white-color;
-
                 display: flex;
                 justify-content: center;
                 align-items: center;
