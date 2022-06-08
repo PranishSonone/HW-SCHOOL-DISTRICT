@@ -20,6 +20,7 @@ $breakpoints: (
   'medium-large-desktop-min': (min-width: 1366px),
   'medium-large-desktop-max': (max-width: 1400px),
   "larg-desktop":(max-width:1700px),
+  "extra-large-destop":(max-width:1800px)
 );
 
 @mixin breakpoint($name) {

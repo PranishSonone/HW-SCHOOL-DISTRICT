@@ -1,7 +1,10 @@
 .container {
-   max-width:1822px ;
-   padding: 0 15px;
+   max-width:1792px ;
+   // padding: 0 15px;
    margin: 0 auto;
+   @include breakpoint(extra-large-destop){
+       padding: 0 20px;
+   }
 }
 .container-fluid{
    width: 100%;
