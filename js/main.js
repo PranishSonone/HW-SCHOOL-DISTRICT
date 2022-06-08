@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+       
   $(".icon-search-bar").click(function () {
     $(this).toggleClass("bg-green");
     $(".icon-search-bar").toggleClass("colo-white");
@@ -81,7 +81,6 @@ $(document).ready(function () {
     // arrow: true,
     slidesToShow: 3,
     infinite: true,
-
 
     responsive: [{
         breakpoint: 1200,
