@@ -276,6 +276,11 @@ header {
             display: flex;
             align-items: center;
             padding-top: 1.8rem;
+            padding-bottom: 1.8rem;
+            @include breakpoint(medium-large-desktop-max) {
+              padding-top: 1.3rem;
+               padding-bottom: 1.3rem;
+            }
 
 
             img {
