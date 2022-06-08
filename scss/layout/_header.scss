@@ -215,7 +215,7 @@ header {
                   min-width: 160px;
                   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
                   z-index: 1;
-                  padding-right: 1rem;
+                  // padding-right: 1rem;
 
 
                   a {
@@ -254,7 +254,7 @@ header {
     }
   }
 
-  .bottem-nav {
+  .bottom-nav {
     background: #FBF9F9;
 
 
@@ -374,13 +374,13 @@ header {
             }
           }
 
-          .bottem-nav-dropdown {
+          .bottom-nav-dropdown {
 
             overflow: hidden;
             background: transparent;
             font-family: $tertiary-font-family;
 
-            &:hover .bottem-nav-dropdown-content {
+            &:hover .bottom-nav-dropdown-content {
               display: block;
             }
 
@@ -391,7 +391,7 @@ header {
 
           }
 
-          .bottem-nav-dropbtn {
+          .bottom-nav-dropbtn {
             font-size: 2rem;
             border: none;
             outline: none;
@@ -424,7 +424,7 @@ header {
             }
           }
 
-          .bottem-nav-dropdown-content {
+          .bottom-nav-dropdown-content {
             display: none;
             position: absolute;
             background-color: #f9f9f9;
