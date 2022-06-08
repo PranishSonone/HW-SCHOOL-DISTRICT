@@ -1843,10 +1843,11 @@
         }
 
 
-
+        
         .circle-chart__percent {
             font-family: $primary-font-family;
-
+            font-size: 6px;
+           
             @include breakpoint (desktop-max) {
                 font-size: 6px;
             }
@@ -1916,6 +1917,15 @@
                     width: 90px;
                     height: 90px;
                 }
+                .circle-chart__percent {
+                    font-family: $primary-font-family;
+                    font-size: 6px;
+                    fill: #841E25;
+                   
+                    @include breakpoint (desktop-max) {
+                        font-size: 6px;
+                    }
+                }
             }
         }
 
@@ -1941,6 +1951,15 @@
                     height: 90px;
                 }
             }
+            .circle-chart__percent {
+                font-family: $primary-font-family;
+                font-size: 6px;
+                fill:#70CE88;
+               
+                @include breakpoint (desktop-max) {
+                    font-size: 6px;
+                }
+            }
 
         }
 
@@ -1964,6 +1983,15 @@
                 @include breakpoint (desktop-max) {
                     width: 90px;
                     height: 90px;
+                }
+            }
+            .circle-chart__percent {
+                font-family: $primary-font-family;
+                font-size: 6px;
+                fill:#FFBA49;
+               
+                @include breakpoint (desktop-max) {
+                    font-size: 6px;
                 }
             }
 
