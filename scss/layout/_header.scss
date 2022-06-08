@@ -1,10 +1,11 @@
 header {
   // position: fixed;
   top: 0;
-	width: 100%;
+  width: 100%;
   z-index: 999;
+
   .top-header {
-   
+
     line-height: 2.2rem;
     background: $bg-primary-color;
 
@@ -22,48 +23,51 @@ header {
           align-items: center;
 
           .call {
-            h2 {
+
+            color: $header-icon-color;
+            // display: flex;
+            align-items: center;
+            font-size: 1.8rem;
+            // $primary-font-family: 'Circular-Std-Book';
+            font-family: $primary-font-family;
+            padding-right: 4.5rem;
+
+            @include breakpoint(medium-large-desktop-max) {
+              font-size: 1.6rem;
+            }
+
+            @include breakpoint(ipad-max) {
+              padding-right: 1.5rem;
+            }
+
+
+            span {
+              font-size: 1.4rem;
               color: $header-icon-color;
-              // display: flex;
-              align-items: center;
-              font-size: 1.8rem;
               $primary-font-family: 'Circular-Std-Book';
-              padding-right: 4.5rem;
+              padding-right: 0.8rem;
+
+              @include breakpoint(medium-large-desktop-max) {
+                font-size: 1.2rem;
+                padding-right: 0.6rem;
+              }
+            }
+
+            a {
+              font-family: 'Circular-Std-Book';
+              font-weight: 400;
+              color: $header-icon-color;
+              font-size: 1.8rem;
 
               @include breakpoint(medium-large-desktop-max) {
                 font-size: 1.6rem;
               }
+
               @include breakpoint(ipad-max) {
-                padding-right: 1.5rem;
-              }
-  
-
-              span {
                 font-size: 1.4rem;
-                color: $header-icon-color;
-                $primary-font-family: 'Circular-Std-Book';
-                padding-right: 0.8rem;
-
-                @include breakpoint(medium-large-desktop-max) {
-                  font-size: 1.2rem;
-                  padding-right: 0.6rem;
-                }
-              }
-
-              a {
-                $primary-font-family: 'Circular-Std-Book';
-                color: $header-icon-color;
-                font-size: 1.8rem;
-
-                @include breakpoint(medium-large-desktop-max) {
-                  font-size: 1.6rem;
-                }
-                @include breakpoint(ipad-max) {
-                  font-size: 1.4rem;
-                }
-
               }
             }
+
           }
 
           .mail {
@@ -88,13 +92,14 @@ header {
 
               a {
                 // $primary-font-family: 'Circular-Std-Book';
-                font-family: $primary-font-family ;
+                font-family: $primary-font-family;
                 color: $header-icon-color;
                 font-size: 1.8rem;
 
                 @include breakpoint(medium-large-desktop-max) {
                   font-size: 1.6rem;
                 }
+
                 @include breakpoint(ipad-max) {
                   font-size: 1.4rem;
                 }
@@ -116,10 +121,11 @@ header {
           .singup-btn {
             margin-right: 3rem;
             padding: 2rem 0;
-            :hover{
+
+            :hover {
               background-color: $bg-primary-color;
-              color: $white-color ;
-               border: 0.1rem solid $white-color;
+              color: $white-color;
+              border: 0.1rem solid $white-color;
 
             }
 
@@ -127,13 +133,13 @@ header {
             @include breakpoint(medium-large-desktop-max) {
               padding: 1rem 0;
             }
+
             @include breakpoint(ipad-max) {
               margin-right: 1rem;
               padding: 1rem 0;
             }
-            @include breakpoint(mobile-max){
 
-            }
+            @include breakpoint(mobile-max) {}
 
 
 
@@ -142,14 +148,16 @@ header {
               background-color: $white-color;
               border-radius: 2.2rem;
               font-size: 1.7rem;
-              font-family: 'tertiary-font-family';
+              font-family: $tertiary-font-family;
+              font-weight: 400;
               color: $header-btn-color;
 
               @include breakpoint(medium-large-desktop-max) {
                 padding: 1.2rem 2.7rem;
                 font-size: 1.4rem;
               }
-              @include breakpoint(mobile-max){
+
+              @include breakpoint(mobile-max) {
                 padding: 1rem 1.5rem;
                 font-size: 1rem;
               }
@@ -157,95 +165,118 @@ header {
           }
 
           .select-languge {
-            .select-languge-dropdown {
-              
-              .top-header-dropdown {
-                overflow: hidden;
-                padding: 1rem 2.2rem;
+            .top-header-dropdown {
+              overflow: hidden;
+              // padding: 1rem 2.2rem;
+              padding: 1rem 0 1rem 2.2rem;
+
+              @include breakpoint(medium-large-desktop-max) {
+                padding: 1rem 0;
+                font-size: 1.4rem;
+              }
+
+              .top-header-dropbtn {
+
+                font-size: 17px;
+                font-family: $primary-font-family;
+                font-weight: 400;
+                border: 0.1rem solid $white-color;
+                border-radius: 2.2rem;
+                color: $white-color;
+                padding: 1rem 3.7rem;
+                background: transparent;
+                margin: 0;
+                -webkit-border-radius: 2.2rem;
+                -moz-border-radius: 2.2rem;
+                -ms-border-radius: 2.2rem;
+                -o-border-radius: 2.2rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
 
                 @include breakpoint(medium-large-desktop-max) {
-                  padding: 1rem 0;
-                  font-size: 1.4rem;
+                  padding: 1rem 2.7rem;
+                  font-size: 1.2rem;
                 }
 
-                .top-header-dropbtn {
+                @include breakpoint(mobile-max) {
+                  padding: 0.4rem 1.5rem;
+                  font-size: 1rem;
+                }
 
-                  font-size: 17px;
-                  font-family: $primary-font-family;
-                  border: 0.1rem solid $white-color;
-                  border-radius: 2.2rem;
-                  color: $white-color;
-                  padding: 1rem 3.7rem;
-                  background: transparent;
-                  margin: 0;
-                  -webkit-border-radius: 2.2rem;
-                  -moz-border-radius: 2.2rem;
-                  -ms-border-radius: 2.2rem;
-                  -o-border-radius: 2.2rem;
-                  display: flex;
-                  justify-content: space-between;
-                  align-items: center;
-                  
+                @include breakpoint(portrait-mobile-max) {
+                  padding: 0.2rem 1.5rem;
+                }
 
-                  @include breakpoint(medium-large-desktop-max) {
-                    padding: 1rem 2.7rem;
-                    font-size: 1.2rem;
-                  }
-                  @include breakpoint(mobile-max){
-                    padding: 0.4rem 1.5rem;
+                .icon-drop-down {
+                  margin-left: 1rem;
+                  font-size: 1.6rem;
+
+                  @include breakpoint(mobile-max) {
                     font-size: 1rem;
                   }
-                  @include breakpoint(portrait-mobile-max){
-                    padding: 0.2rem 1.5rem;
-                  }
+                }
+              }
 
-                  span {
-                    padding-left: 1rem;
-                    font-size: 1.6rem;
-                    @include breakpoint(mobile-max){
-                      font-size: 1rem;
-                    }
+              .top-header-dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+                // padding-right: 1rem;
+
+
+                a {
+                  float: none;
+                  color: #000000;
+                  padding: 12px 16px;
+                  text-decoration: none;
+                  display: block;
+                  text-align: left;
+
+                  &:hover {
+                    background-color: $white-color;
+                    color: #000000;
                   }
+                }
+              }
+
+              &:hover {
+                .top-header-dropbtn {
+                  background-color: transparent;
+                  color: white;
                 }
 
                 .top-header-dropdown-content {
-                  display: none;
-                  position: absolute;
-                  background-color: #f9f9f9;
-                  min-width: 160px;
-                  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-                  z-index: 1;
-                  // padding-right: 1rem;
-
-
-                  a {
-                    float: none;
-                    color: #000000;
-                    padding: 12px 16px;
-                    text-decoration: none;
-                    display: block;
-                    text-align: left;
-
-                    &:hover {
-                      background-color: $white-color;
-                      color: #000000;
-                    }
-                  }
-                }
-
-                &:hover .top-header-dropbtn {
-                  background-color: transparent;
-                  color: white;
-
-                }
-
-                &:hover .top-header-dropdown-content {
                   display: block;
+                }
+                .icon-drop-down {
+                  transform: rotate(180deg);
+                  //margin-left: 0.3rem;
+                  transition: 0.3s;
+                  -webkit-transition: 0.3s;
+                  -moz-transition: 0.3s;
+                  -ms-transition: 0.3s;
+                  -o-transition: 0.3s;
+                  -webkit-transform: rotate(180deg);
+                  -moz-transform: rotate(180deg);
+                  -ms-transform: rotate(180deg);
+                  -o-transform: rotate(180deg);
+                  //padding-left: 0;
+                  //padding-right: 1rem;
                 }
 
 
               }
+
+
+
+
             }
+           
 
           }
         }
@@ -277,9 +308,10 @@ header {
             align-items: center;
             padding-top: 1.8rem;
             padding-bottom: 1.8rem;
+
             @include breakpoint(medium-large-desktop-max) {
               padding-top: 1.3rem;
-            padding-bottom: 1.3rem;
+              padding-bottom: 1.3rem;
             }
 
 
@@ -289,8 +321,9 @@ header {
               @include breakpoint(medium-large-desktop-max) {
                 width: 75%;
               }
-              @include breakpoint(mobile-max){
-             width: 30px;
+
+              @include breakpoint(mobile-max) {
+                width: 30px;
               }
             }
 
@@ -298,14 +331,16 @@ header {
               padding-left: 0.8rem;
               color: $heading-color;
               font-family: $secondary-font-family;
+              font-weight: 400;
               font-size: 2.4rem;
 
               @include breakpoint(medium-large-desktop-max) {
                 padding-left: 0.4rem;
                 font-size: 1.6rem;
               }
-              @include breakpoint(mobile-max){
-            
+
+              @include breakpoint(mobile-max) {
+
                 font-size: 1rem;
               }
             }
@@ -359,8 +394,10 @@ header {
             font-size: 2rem;
             color: $nav-link-color;
             font-family: $tertiary-font-family;
-            &:hover{
-              color:$bg-primary-color;
+            font-weight: 400;
+
+            &:hover {
+              color: $bg-primary-color;
             }
 
             @include breakpoint(medium-large-desktop-max) {
@@ -380,8 +417,28 @@ header {
             background: transparent;
             font-family: $tertiary-font-family;
 
-            &:hover .bottom-nav-dropdown-content {
-              display: block;
+            &:hover {
+              .bottom-nav-dropdown-content {
+                display: block;
+              }
+
+
+              .icon-drop-down {
+                transform: rotate(180deg);
+                //margin-left: 0.3rem;
+                transition: 0.3s;
+                -webkit-transition: 0.3s;
+                -moz-transition: 0.3s;
+                -ms-transition: 0.3s;
+                -o-transition: 0.3s;
+                -webkit-transform: rotate(180deg);
+                -moz-transform: rotate(180deg);
+                -ms-transform: rotate(180deg);
+                -o-transform: rotate(180deg);
+                //padding-left: 0;
+                //padding-right: 1rem;
+              }
+
             }
 
             @include breakpoint (desktop-max) {
@@ -400,22 +457,27 @@ header {
             display: flex;
             align-items: center;
 
-            button{
+            button {
               display: flex;
               align-items: center;
             }
 
-           
+
             cursor: pointer;
+
             .icon-drop-down {
-              padding-left: 1rem;
-              &:before{
-              content: "\e905";
-              color: #000000;
+
+
+              margin-left: 1rem;
+
+              &:before {
+                content: "\e905";
+                color: #000000;
               }
             }
-            &:hover{
-              color:$bg-primary-color ;
+
+            &:hover {
+              color: $bg-primary-color;
             }
 
             @include breakpoint(medium-large-desktop-max) {
@@ -433,7 +495,7 @@ header {
             z-index: 1;
 
             @include breakpoint(ipad-max) {
-               
+
               position: relative;
               max-width: 160px;
             }
@@ -445,11 +507,11 @@ header {
               text-decoration: none;
               display: block;
               text-align: left;
-              
+
 
               &:hover {
                 background-color: #ddd;
-                color:$bg-primary-color ;
+                color: $bg-primary-color;
               }
             }
           }
@@ -472,7 +534,7 @@ header {
 
 
       span {
-        background:$bg-primary-color ;
+        background: $bg-primary-color;
         width: 100%;
         height: 0.4rem;
         margin: 0.4rem 0;
@@ -518,60 +580,66 @@ header {
   .menu-page {
     overflow: hidden;
   }
-  .searchbox{
-    position: relative;
-}
-.input{
-  width: 6rem;
-  border: 0;
-  height: 4.4rem;
-  padding: 0;
-  border-radius: 2.2rem;
-  -webkit-border-radius: 2.2rem;
-  -moz-border-radius: 2.2rem;
-  -ms-border-radius: 2.2rem;
-  -o-border-radius: 2.2rem;
-  box-shadow: 0 0 0.1rem 0.1rem  $white-color;
-  outline: none;
-  color: #42be11;
-  transition:all 0.5s ease-in ;
-  -webkit-transition:all 0.5s ease-in ;
-  -moz-transition:all 0.5s ease-in ;
-  -ms-transition:all 0.5s ease-in ;
-  -o-transition:all 0.5s ease-in ;
-  @include breakpoint(desktop-max){
-   background-color: aqua;
-   padding: 0 0;
-   padding-left: 4.3rem;
-  
-  
- }
-}
 
-.icon-search-bar{
+  .searchbox {
+    position: relative;
+  }
+
+  .input {
+    width: 6rem;
+    border: 0;
+    height: 4.4rem;
+    padding: 0;
+    border-radius: 2.2rem;
+    -webkit-border-radius: 2.2rem;
+    -moz-border-radius: 2.2rem;
+    -ms-border-radius: 2.2rem;
+    -o-border-radius: 2.2rem;
+    box-shadow: 0 0 0.1rem 0.1rem $white-color;
+    outline: none;
+    color: #42be11;
+    transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+
+    @include breakpoint(desktop-max) {
+      background-color: aqua;
+      padding: 0 0;
+      padding-left: 4.3rem;
+
+
+    }
+  }
+
+  .icon-search-bar {
     font-size: 2.4rem;
-    transition:all 0.5s linear ;
-    -webkit-transition:all 0.5s linear ;
-    -moz-transition:all 0.5s linear ;
-    -ms-transition:all 0.5s linear ;
-    -o-transition:all 0.5s linear ;
+    transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
     position: absolute;
     left: 15px;
     top: 24%;
-}
-.active-width{
-  width: 15rem;
-  border-bottom: 1px solid #42be11;
-  padding-left: 4.5rem;
-    @include breakpoint(desktop-max){
-        width: 50%;
-       
-      }
-      @include breakpoint(mobile-max){
-        width: 90%;
-       
-      }
-}
+  }
+
+  .active-width {
+    width: 15rem;
+    border-bottom: 1px solid #42be11;
+    padding-left: 4.5rem;
+
+    @include breakpoint(desktop-max) {
+      width: 50%;
+
+    }
+
+    @include breakpoint(mobile-max) {
+      width: 90%;
+
+    }
+  }
 
 
 }
