@@ -8,6 +8,9 @@
    @include breakpoint(medium-large-desktop-max){
       padding: 0 30px;
   }
+  @include breakpoint(ipad-max){
+   padding: 0 20px;
+}
 }
 .container-fluid{
    width: 100%;
