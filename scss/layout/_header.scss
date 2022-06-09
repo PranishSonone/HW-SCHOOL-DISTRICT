@@ -45,7 +45,9 @@ header {
             span {
               font-size: 1.4rem;
               color: $header-icon-color;
-              $primary-font-family: 'Circular-Std-Book';
+              // $primary-font-family: 'Circular-Std-Book';
+              font-family:$primary-font-family ;
+              font-weight: 400;
               padding-right: 0.8rem;
 
               @include breakpoint(medium-large-desktop-max) {
