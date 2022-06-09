@@ -81,11 +81,15 @@ header {
               font-size: 1.8rem;
               $primary-font-family: 'Circular-Std-Book';
 
-              span {
+              .icon-letter{
                 font-size: 1.4rem;
                 color: $header-icon-color;
                 $primary-font-family: 'Circular-Std-Book';
                 padding-right: 0.8rem;
+                &:before {
+                  content: "\e909";
+                  color: #C8C8C8;
+                }
 
                 @include breakpoint(medium-large-desktop-max) {
                   font-size: 1.2rem;
