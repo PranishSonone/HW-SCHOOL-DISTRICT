@@ -69,8 +69,9 @@
                 font-size: 7rem;
                 max-width: 694px;
                 color: $white-color;
-                // font-family: $quaternary-font-family;
-                font-family: $primary-font-family;
+                font-weight: 400;
+                font-family: $quaternary-font-family;
+                // font-family: $primary-font-family;
                 animation: 1s slide-left-right forwards;
                 animation-delay: 0.1s;
                 transform: translateX(-100%);
@@ -119,6 +120,7 @@
                 padding: 4rem 0;
                 color: $banner-paragraph-color;
                 font-family: $primary-font-family;
+                font-weight: 400;
 
                 @include breakpoint(larg-desktop) {
                     font-size: 1.4rem;
@@ -240,7 +242,15 @@
 }
 
 .superintendent-section {
-    margin-top: 10.2rem;
+    margin-top: 17.9rem;
+    @include breakpoint(medium-large-desktop-max) {
+        margin-top: 15rem;
+
+    }
+    @include breakpoint(mobile-max) {
+        margin-top: 10rem;
+
+    }
 
 
     .superintendent-left-div {
@@ -253,6 +263,12 @@
             margin-left: 27.5rem;
             position: relative;
             text-align: center;
+            margin-right: 2rem;
+            @include breakpoint(medium-large-desktop-max) {
+             
+                margin-right: 1.5rem;
+            }
+        
 
             @include breakpoint(larg-desktop) {
                 margin-left: 20.5rem;
@@ -266,6 +282,7 @@
 
             @include breakpoint(ipad-max) {
                 margin-left: 11.5rem;
+                margin-right: 0.5rem;
             }
 
             @include breakpoint(mobile-max) {
@@ -333,8 +350,17 @@
     }
 
     .superintendent-text-content {
-
+        margin-left: 2.1rem;
         position: relative;
+        @include breakpoint(medium-large-desktop-max) {
+             
+            margin-left: 1.5rem;
+        }
+        @include breakpoint(ipad-max) {
+           
+      
+            margin-left: 0.5rem;
+        }
 
         @include breakpoint(mobile-max) {
             text-align: center;
@@ -347,7 +373,8 @@
         .superintendent-heading {
             font-size: 4.5rem;
             color: $heading-color;
-            // font-family: $quaternary-font-family;
+            font-family: $quaternary-font-family;
+            font-weight: 400;
             max-width: 485px;
 
             @include breakpoint(larg-desktop) {
@@ -377,7 +404,12 @@
             font-size: 2.5rem;
             font-family: $primary-font-family;
             color: #212529;
-            max-width: 655px;
+            // max-width: 655px;
+            max-width: 538px;
+            text-align: justify;
+            line-height: 30px;
+            
+
 
             @include breakpoint(larg-desktop) {
                 // font-size: 2.1rem;        
@@ -385,16 +417,24 @@
 
             @include breakpoint(medium-large-desktop-max) {
                 font-size: 1.8rem;
-                max-width: 416px;
+              
+                max-width: 468px;
             }
 
             @include breakpoint(desktop-max) {
                 width: 100%;
                 font-size: 1.4rem;
+                line-height: 20px;
+                
+            }
+            @include breakpoint(ipad-max) {
+            //    text-align: center;
+                
             }
 
             @include breakpoint(mobile-max) {
                 max-width: 100%;
+                text-align: center;
             }
         }
 
@@ -515,6 +555,7 @@
                 padding-top: 11.8rem;
                 font-size: 4.8rem;
                 font-family: $quaternary-font-family;
+                font-weight: 400;
                 color: $white-color;
 
                 @include breakpoint(medium-large-desktop-max) {
@@ -536,6 +577,7 @@
                 color: $white-color;
                 font-family: 'Roboto', sans-serif;
                 font-size: 2.2rem;
+                font-weight: 400;
                 // max-width: 63.5rem;
                 max-width: 573px;
                 line-height: 3rem;
@@ -568,7 +610,9 @@
                 font-size: 2.2rem;
                 color: #212529;
                 font-family: $primary-font-family;
+                font-weight: 400;
                 padding: 1.4rem 6.2rem;
+                line-height: 24px;
                 background-color: $white-color;
                 border-radius: 2.2rem;
                 -webkit-border-radius: 2.2rem;
@@ -625,6 +669,7 @@
             }
 
             @include breakpoint(ipad-max) {
+                padding-bottom: 5.5rem;
                 padding-left: 3.45rem;
             }
 
@@ -636,6 +681,9 @@
                 // padding-top: 11.8rem;
                 font-size: 4.8rem;
                 font-family: $quaternary-font-family;
+                font-weight: 400;
+                line-height: 60px;
+                font-weight: 400;
                 color: $white-color;
 
                 @include breakpoint(medium-large-desktop-max) {
@@ -643,7 +691,7 @@
                 }
 
                 @include breakpoint(desktop-max) {
-                    padding-top: 5.8rem;
+                    // padding-top: 5.8rem;
                     font-size: 2rem;
 
                 }
@@ -661,11 +709,13 @@
             .vision-pragraph {
                 color: $white-color;
                 font-family: 'Roboto', sans-serif;
+                font-weight: 400;
                 font-size: 2.2rem;
                 max-width: 56.5rem;
                 line-height: 3rem;
                 padding: 1rem 0 3rem 0;
                 padding-bottom: 0;
+                margin-bottom: 0;
 
                 @include breakpoint(medium-large-desktop-max) {
                     font-size: 1.6rem;
@@ -700,6 +750,10 @@
                 }
 
                 ol {
+                padding-bottom: 2rem;
+                @include breakpoint(desktop-max) {
+                    padding-bottom: 1rem;;
+                }
                     @include breakpoint(mobile-max) {
                         text-align: left;
                     }
@@ -710,11 +764,11 @@
                         font-size: 2.2rem;
                         // max-width: 63.5rem;
                         line-height: 0.5rem;
-                        padding: 1rem 0 3rem 0;
+                        padding: 1rem 0 0rem 0;
 
                         @include breakpoint(medium-large-desktop-max) {
                             font-size: 1.6rem;
-                            padding: 1rem 0 2rem 0;
+                            padding: 1rem 0 1rem 0;
                         }
 
                         @include breakpoint(desktop-max) {
@@ -953,6 +1007,7 @@
                 padding-top: 2.6rem;
                 padding-bottom: 2.6rem;
                 font-family: $quaternary-font-family;
+                font-weight: 400;
 
                 @include breakpoint(medium-large-desktop-max) {
                     font-size: 2rem;
@@ -1102,7 +1157,8 @@
 .lorem-slick-slider {
 
     padding-bottom: 30rem;
-    background: linear-gradient(rgb(132 30 37 / 0.07), rgb(248, 219, 219));
+    // background: linear-gradient(rgb(132 30 37 / 0.07), rgb(248, 219, 219));
+    background-color: #F9F4FC;
     border-radius: 40%;
     border-top-left-radius: 40%;
     border-bottom-left-radius: 40%;
@@ -1132,8 +1188,9 @@
         font-size: 4.8rem;
         padding-top: 9.4rem;
         color: #373737;
-        // font-family: $quaternary-font-family;
-        font-family: $primary-font-family;
+        font-weight: 400;
+        font-family: $quaternary-font-family;
+        // font-family: $primary-font-family;
         padding-bottom: 2.8rem;
 
         @include breakpoint(medium-large-desktop-max) {
@@ -1159,6 +1216,7 @@
         font-size: 2.3rem;
         color: #7D7D7D;
         max-width: 90.5rem;
+        font-weight: 400;
         margin: 0 auto;
 
         @include breakpoint(medium-large-desktop-max) {
@@ -1317,7 +1375,9 @@
                     padding-top: 2.5rem;
                     padding-bottom: 3.1rem;
                     color: #37474F;
-                    font-family: $secondary-font-family;
+                    // font-family: $secondary-font-family;
+                    font-family: $primary-font-family;
+                    font-weight: 400;
                     cursor: pointer;
                     background-color: #ffffff;
 
@@ -1336,6 +1396,7 @@
 
     .lorem-slider {
         position: relative;
+        z-index: 1;
 
         .lorem-dot-img {
             position: absolute;
@@ -1367,8 +1428,9 @@
         .testimonial-heading-h2 {
             font-size: 4.8rem;
             color: $sceouendry-heading-color;
-            // font-family: $quaternary-font-family;
-            font-family: $primary-font-family;
+            font-family: $quaternary-font-family;
+            font-weight: 400;
+            // font-family: $primary-font-family;
             padding-bottom: 2.8rem;
 
             @include breakpoint(medium-large-desktop-max) {
@@ -1392,6 +1454,7 @@
         p {
             font-family: "Roboto", sans-serif;
             font-size: 2.3rem;
+            font-weight: 400;
             color: $banner-paragraph-color;
             max-width: 90.5rem;
             margin: 0 auto;
@@ -1511,6 +1574,7 @@
                     h4 {
                         font-size: 2.9rem;
                         font-family: $primary-font-family;
+                        font-weight: 400;
                         color: #212121;
                         padding-left: 2.7rem;
 
@@ -1526,6 +1590,8 @@
                         font-family: 'Roboto', sans-serif;
                         color: #37474F;
                         padding-left: 2.7rem;
+                        font-family: 'Metropolis';
+                        font-weight: 500;
 
                         @include breakpoint(larg-desktop) {
                             font-size: 1.4rem;
@@ -1540,6 +1606,7 @@
                     p {
                         font-size: 2.2rem;
                         font-family: 'Roboto', sans-serif;
+                        font-weight: 400;
                         color: #37474F;
 
                         @include breakpoint(larg-desktop) {
@@ -1633,8 +1700,9 @@
         h2 {
             font-size: 4.8rem;
             color: $bg-primary-color;
-            // font-family: $quaternary-font-family;
-            font-family: $primary-font-family;
+            font-family: $quaternary-font-family;
+            font-weight: 400;
+            // font-family: $primary-font-family;
             padding-top: 14.5rem;
             padding-bottom: 4.6rem;
 
@@ -1688,6 +1756,7 @@
                         color: #373737;
                         font-size: 2.8rem;
                         font-family: $primary-font-family;
+                        font-weight: 400;
 
                         &:hover {
                             color: $bg-primary-color;
@@ -1745,14 +1814,15 @@
 }
 
 .progress-bar-section {
-    .progrssbar-heading {
+    .progressbar-heading {
         h2 {
             font-size: 4.8rem;
             padding-top: 9.4rem;
             padding-bottom: 4.2rem;
             color: #373737;
-            // font-family: $quaternary-font-family;
-            font-family: $primary-font-family;
+            font-family: $quaternary-font-family;
+            font-weight: 400;
+            // font-family: $primary-font-family;
 
             @include breakpoint(medium-large-desktop-max) {
                 font-size: 3.5rem;
@@ -1774,6 +1844,7 @@
 
         p {
             font-family: 'Roboto', sans-serif;
+            font-weight: 400;
             font-size: 2.3rem;
             color: #7D7D7D;
             max-width: 90.5rem;
@@ -1862,6 +1933,7 @@
                 font-size: 2.4rem;
                 color: #4B647E;
                 font-family: $primary-font-family;
+                font-weight: 400;
 
                 @include breakpoint (larg-desktop) {
                     padding-top: 2rem;
@@ -1881,6 +1953,7 @@
                 font-size: 2rem;
                 color: #7D7D7D;
                 font-family: $primary-font-family;
+                font-weight: 400;
 
                 @include breakpoint (larg-desktop) {
                     padding-top: 2.5rem;

@@ -6,7 +6,7 @@
         url('../fonts/circular-std/CircularStd-Bold.woff') format('woff'),
         url('../fonts/circular-std/CircularStd-Bold.ttf') format('truetype'),
         url('../fonts/circular-std/CircularStd-Bold.svg#CircularStd-Bold') format('svg');
-    font-weight: bold;
+    font-weight: 100;
     font-style: normal;
     font-display: swap;
 }
@@ -51,3 +51,15 @@
 }
 
 
+@font-face {
+    font-family: 'Metropolis';
+    src: url('../fonts/Metropolis-Medium/Metropolis-Medium.eot');
+    src: url('../fonts/Metropolis-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Metropolis-Medium.woff2') format('woff2'),
+        url('../fonts/Metropolis-Medium.woff') format('woff'),
+        url('../fonts/Metropolis-Medium.ttf') format('truetype'),
+        url('../fonts/Metropolis-Medium.svg#Metropolis-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}

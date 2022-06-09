@@ -5,6 +5,9 @@
    @include breakpoint(extra-large-destop){
        padding: 0 20px;
    }
+   @include breakpoint(medium-large-desktop-max){
+      padding: 0 30px;
+  }
 }
 .container-fluid{
    width: 100%;
