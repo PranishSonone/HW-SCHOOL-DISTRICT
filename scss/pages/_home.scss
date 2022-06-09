@@ -312,8 +312,9 @@
 
         .kimmie-btn-div {
             position: absolute;
-            bottom: 0px;
+            // bottom: 0px;
             left: 50%;
+            bottom: -10px;
             transform: translateX(-50%);
             width: 40rem;
             padding: 1rem 0;
@@ -793,9 +794,7 @@
 
 
             .vision-btn {
-                a{
-                    
-                }
+               
                 font-size: 2.2rem;
                 color: $mission-btn;
                 font-family: $primary-font-family;
@@ -1650,13 +1649,16 @@
         //     font-size: 1.4rem;
         //     // font-size: 2rem;
         // }
+        .slick-dots {
+            bottom: -35px;
+        }
         .slick-dots button:before {
-            font-size: 20px;
+            font-size: 30px;
         }
 
         .slick-dots .slick-active button:before {
             color: $bg-primary-color;
-            font-size: 25px;
+            font-size: 35px;
         }
 
     }
@@ -1738,6 +1740,7 @@
 
         @include breakpoint(portrait-mobile-max) {
             flex-direction: column;
+            padding-bottom: 10.1rem;
         }
 
 

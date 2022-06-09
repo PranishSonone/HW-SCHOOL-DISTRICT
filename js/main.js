@@ -1,19 +1,30 @@
 $(document).ready(function () {
        
   $(".icon-search-bar").click(function () {
-    $(this).toggleClass("bg-green");
+  
     $(".icon-search-bar").toggleClass("colo-white");
     $(".input").focus().toggleClass("active-width");
-    $(this).find('.input').val('');
+    
+
+
+
+    $('input').on('click focusin', function() {
+      this.value = '';
+    
+  });
   
   });
 
 
 
   $('.hamburger').on('click', function () {
+    $(this).toggleClass("hamburger-position");
     $('.navigation').toggleClass('menu-open');
     $('.hamburger').toggleClass('menu-close');
     $('html').toggleClass('menu-page')
+    if (screen.width < 480) {
+      $(".hamburger span").toggleClass("span-color-brown");
+     }
   });
 
 

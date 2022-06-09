@@ -13,7 +13,7 @@ header {
       .top-header-row {
         display: flex;
         justify-content: space-between;
-        padding: 1rem 0;
+        padding: 2rem 0;
         // padding: 0 15px;
 
 
@@ -127,38 +127,20 @@ header {
 
           .singup-btn {
             margin-right: 3rem;
-            padding: 2rem 0;
+            // padding: 2rem 0;
             // border: 0.1rem solid $white-color;
-
-            :hover {
-              background-color: $bg-primary-color;
-              color: $white-color;
-              border: 0.1rem solid $white-color;
-
-            }
-
-
-            @include breakpoint(medium-large-desktop-max) {
-              padding: 1rem 0;
-            }
-
-            @include breakpoint(ipad-max) {
-              margin-right: 1rem;
-              padding: 1rem 0;
-            }
-
-            @include breakpoint(mobile-max) {}
-
-
-
+          
+          
+            
             a {
-              padding: 1.2rem 3.7rem;
+              padding: 1.3rem 3.7rem;
               background-color: $white-color;
               border-radius: 2.2rem;
               font-size: 1.7rem;
               font-family: $tertiary-font-family;
               font-weight: 400;
               color: $header-btn-color;
+              border: 2px solid transparent;
 
               @include breakpoint(medium-large-desktop-max) {
                 padding: 1.2rem 2.7rem;
@@ -169,7 +151,29 @@ header {
                 padding: 1rem 1.5rem;
                 font-size: 1rem;
               }
+              &:hover {
+                background-color: $bg-primary-color;
+                color: $white-color;
+                border: 1px solid $white-color;
+  
+              }
             }
+
+
+            // @include breakpoint(medium-large-desktop-max) {
+            //   padding: 1rem 0;
+            // }
+
+            // @include breakpoint(ipad-max) {
+            //   margin-right: 1rem;
+            //   padding: 1rem 0;
+            // }
+
+            // @include breakpoint(mobile-max) {}
+
+
+
+          
           }
 
           .select-languge {
@@ -191,6 +195,7 @@ header {
                 border: 0.1rem solid $white-color;
                 border-radius: 2.2rem;
                 color: $white-color;
+                // padding: 1rem 3.7rem;
                 padding: 1rem 3.7rem;
                 background: transparent;
                 margin: 0;
@@ -204,7 +209,7 @@ header {
 
 
                 @include breakpoint(medium-large-desktop-max) {
-                  padding: 1rem 2.7rem;
+                  // padding: 1rem 2.7rem;
                   font-size: 1.2rem;
                 }
 
@@ -284,8 +289,9 @@ header {
 
 
             }
-           
-
+          }
+          .search-bar{
+            // display: none;
           }
         }
 
@@ -301,6 +307,9 @@ header {
 
       display: flex;
       align-items: center;
+      @include breakpoint(desktop-max){
+              justify-content: space-between;
+      }
 
       .mainlogo {
         width: 30%;
@@ -503,9 +512,15 @@ header {
             z-index: 1;
 
             @include breakpoint(ipad-max) {
-
+         
               position: relative;
-              max-width: 160px;
+              max-width: 85%;
+            }
+            @include breakpoint(mobile-max) {
+              min-width: unset;
+              box-shadow:unset;
+              background-color: unset;
+            
             }
 
             a {
@@ -548,8 +563,23 @@ header {
         margin: 0.4rem 0;
         display: block;
         border-radius: 0.625rem;
+        @include breakpoint(small-mobile){
+        background-color: #ffffff;
+        }
+
+      }
+      .span-color-brown{
+        background-color: #841E25;
       }
     }
+    @include breakpoint(small-mobile){
+      position: absolute;
+      top: 2rem;
+    }
+  }
+  .hamburger-position{
+    position: absolute;
+    top: 1.5rem;
   }
 
   .menu-close {
@@ -591,6 +621,10 @@ header {
 
   .searchbox {
     position: relative;
+    margin-right: 4rem;
+    @include breakpoint(small-mobile){
+      margin-right: 0rem;
+    }
   }
 
   .input {
@@ -605,20 +639,23 @@ header {
     -o-border-radius: 2.2rem;
     box-shadow: 0 0 0.1rem 0.1rem $white-color;
     outline: none;
-    color: #42be11;
+    // color: #42be11;
+    color: #841E25;
     transition: all 0.5s ease-in;
     -webkit-transition: all 0.5s ease-in;
     -moz-transition: all 0.5s ease-in;
     -ms-transition: all 0.5s ease-in;
     -o-transition: all 0.5s ease-in;
+    // padding: 0 4rem;
+    padding-left: 4rem;
+    padding-right: 1rem;
 
     @include breakpoint(desktop-max) {
-      background-color: aqua;
-      padding: 0 0;
-      padding-left: 4.3rem;
-
-
+      height: 3.4rem;
+      // padding: 0 2.4rem;
+      padding-right: 2.4rem;
     }
+   
   }
 
   .icon-search-bar {
@@ -631,22 +668,41 @@ header {
     position: absolute;
     left: 15px;
     top: 24%;
+    @include breakpoint(ipad-max){
+      top: 20%;
+    }
+    @include breakpoint(mobile-max){
+      font-size: 1.7rem;
+    }
+    @include breakpoint(mobile-max){
+      left: 5px;
+    }
   }
 
   .active-width {
     width: 15rem;
-    border-bottom: 1px solid #42be11;
-    padding-left: 4.5rem;
-    padding-right: 1rem;
+    // border-bottom: 1px solid #42be11;
+    // padding-left: 4.5rem;
+    // padding-right: 1rem;
 
     @include breakpoint(desktop-max) {
-      width: 50%;
+      // width: 50%;
+      // padding: unset;
+      width: 20rem;
 
     }
 
     @include breakpoint(mobile-max) {
-      width: 90%;
+      // width: 90%;
+      //  padding: 0.5rem;
+       width: 15rem;
+       
 
+    }
+    @include breakpoint(portrait-mobile-max) {
+      // width: 90%;
+      //  padding: 0.5rem;
+      width: 11rem;
     }
   }
 
