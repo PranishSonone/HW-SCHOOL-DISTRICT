@@ -4,7 +4,8 @@ $(document).ready(function () {
     $(this).toggleClass("bg-green");
     $(".icon-search-bar").toggleClass("colo-white");
     $(".input").focus().toggleClass("active-width");
-
+    $(this).find('.input').val('');
+  
   });
 
 

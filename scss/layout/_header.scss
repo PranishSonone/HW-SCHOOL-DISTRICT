@@ -124,6 +124,7 @@ header {
           .singup-btn {
             margin-right: 3rem;
             padding: 2rem 0;
+            // border: 0.1rem solid $white-color;
 
             :hover {
               background-color: $bg-primary-color;
@@ -632,6 +633,7 @@ header {
     width: 15rem;
     border-bottom: 1px solid #42be11;
     padding-left: 4.5rem;
+    padding-right: 1rem;
 
     @include breakpoint(desktop-max) {
       width: 50%;

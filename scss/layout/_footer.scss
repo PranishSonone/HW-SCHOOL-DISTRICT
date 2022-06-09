@@ -147,7 +147,7 @@ footer {
 
                 &:nth-child(1) {
                     .icon-location {
-
+                        width: 2.1rem;
                         font-size: 2.4rem;
                         padding-right: 0.7rem;
 
@@ -200,6 +200,7 @@ footer {
                     }
 
                     .icon-letter {
+                        width: 2.1rem;
                         font-size: 2.9rem;
                        font-family:$primary-font-family ; 
                        font-weight: 400;
@@ -242,11 +243,12 @@ footer {
                         // $primary-font-family: 'Circular-Std-Book';
                         font-family: $primary-font-family ;
                         padding-right: .7rem;
+                        width: 2.1rem;
 
-                        .icon-call:before {
+                        &:before {
                             content: "\e904";
                             color: $white-color;
-                            font-weight: 400;
+                            // font-weight: 400;
                         }
 
                         @include breakpoint(medium-large-desktop-max) {
@@ -298,6 +300,7 @@ footer {
                                 .icon-youtube,
                                 .icon-twitter {
                                     font-size: 2.2rem;
+                                    // margin: 0;
 
                                     &::before {
                                         color: #F2E162;
@@ -313,7 +316,7 @@ footer {
                             }
 
                             .icon-facebook {
-                                font-size: 2.2rem;
+                                font-size: 1.6rem;
                                 transition: 0.4s;
                                 -webkit-transition: 0.4s;
                                 -moz-transition: 0.4s;
