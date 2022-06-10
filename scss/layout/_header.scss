@@ -129,7 +129,9 @@ header {
             margin-right: 3rem;
             // padding: 2rem 0;
             // border: 0.1rem solid $white-color;
-          
+            @include breakpoint(ipad-max) {
+            margin-right: 1rem;
+            }
           
             
             a {
@@ -145,6 +147,9 @@ header {
               @include breakpoint(medium-large-desktop-max) {
                 padding: 1.3rem  3.7rem;
                 font-size: 1.4rem;
+              }
+              @include breakpoint(ipad-max) {
+                padding: 1.3rem  2.5rem;
               }
 
               @include breakpoint(mobile-max) {
@@ -214,12 +219,12 @@ header {
                 }
 
                 @include breakpoint(mobile-max) {
-                  padding: 0.4rem 1.5rem;
+                  padding: .6rem 1.5rem;
                   font-size: 1rem;
                 }
 
                 @include breakpoint(portrait-mobile-max) {
-                  padding: 0.2rem 1.5rem;
+                  padding: .6rem 1.5rem;
                 }
 
                 .icon-drop-down {
@@ -398,6 +403,7 @@ header {
           justify-content: space-between;
           align-items: center;
           margin-bottom: 0;
+          
 
           @include breakpoint (desktop-max) {
             display: block;
@@ -423,8 +429,9 @@ header {
             }
 
             @include breakpoint (desktop-max) {
-              padding-left: 1.5rem;
-              padding-bottom: 1.5rem;
+              // padding-left: 1.5rem;
+              padding: 1rem 3.5rem;
+              // padding-bottom: 1.5rem;
             }
           }
 
@@ -473,6 +480,11 @@ header {
             color: $nav-link-color;
             display: flex;
             align-items: center;
+            @include breakpoint(desktop-max){
+              width: 100%;
+              justify-content: space-between;
+              padding: 0 2rem;
+            }
 
             button {
               display: flex;
