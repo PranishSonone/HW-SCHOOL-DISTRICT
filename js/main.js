@@ -30,13 +30,14 @@ $(document).ready(function () {
   
 
   });
-if (screen.width < 1200){
-    $('icon-drop-down').on('click ', function() {
-     $(".top-header-dropdown-content").toggleClass(" display");
-     alert("hello")
-   
- });
-}
+
+//     $('.top-header-dropbtn').on('click ', function() {
+//       if (screen.width < 1200){
+//      $(".top-header-dropdown-content").toggleClass("display");
+//     //  alert("hello")
+//       }
+//  });
+
 
 
 
