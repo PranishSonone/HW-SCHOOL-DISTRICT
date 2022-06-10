@@ -261,6 +261,9 @@ header {
                   }
                 }
               }
+              .display{
+                display: none;
+              }
 
               &:hover {
                 .top-header-dropbtn {
@@ -524,7 +527,10 @@ header {
             z-index: 1;
 
             @include breakpoint(ipad-max) {
-         
+              padding-left: 2rem;
+              min-width: unset;
+              box-shadow:unset;
+              background-color: unset;
               position: relative;
               max-width: 85%;
             }
